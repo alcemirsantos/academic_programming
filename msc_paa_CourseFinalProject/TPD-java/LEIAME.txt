@@ -1,0 +1,12 @@
+Trabalho Prático da Disciplina de Projeto e Análise de Algoritmos
+Aluno: Alcemir Rodrigues Santos
+
+## Instruções:
+Para executar o código do trabalho você deve:
+
+1. Importar o projeto na Eclipse IDE;
+2. Executar o método "main" existente na classe "Main.java" que pode ser encontrada
+	dentro do pacote "package alcemir.tpd.paa.main"
+
+# Recomendações:
+É fortemente recomendado utilzar JDK1.6 e Eclipse 1.6.

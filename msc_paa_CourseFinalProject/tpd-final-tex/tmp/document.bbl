@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{kempe:2003}
+D.~Kempe, J.~Kleinberg, and {\'E}.~Tardos.
+\newblock Maximizing the spread of influence through a social network.
+\newblock In {\em Proceedings of the ninth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, KDD '03, pages 137--146, New York,
+  NY, USA, 2003. ACM.
+
+\bibitem{kimura:2007}
+M.~Kimura, K.~Saito, and R.~Nakano.
+\newblock Extracting influential nodes for information diffusion on a social
+  network.
+\newblock In {\em Proceedings of the 22nd national conference on Artificial
+  intelligence - Volume 2}, pages 1371--1376. AAAI Press, 2007.
+
+\bibitem{kimura:2010}
+M.~Kimura, K.~Saito, R.~Nakano, and H.~Motoda.
+\newblock Extracting influential nodes on a social network for information
+  diffusion.
+\newblock {\em Data Mining Knowledge Discovery}, 20:70--97, January 2010.
+
+\end{thebibliography}
