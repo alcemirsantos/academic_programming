@@ -1,0 +1,2956 @@
+<html>
+<head>
+<title>TestNG:  br.testes.TestesAnaliseSintatica</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>br.testes.TestesAnaliseSintatica</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>88/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 31 16:15:37 GMT-03:00 2009</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (641 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students)));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 48
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:439)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18992192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18992192'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 48
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:439)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [no.me, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18303751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18303751'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> JOIN [no_me='Alcemir']((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23188331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23188331'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> JOIN [nome='sal']((SELECT [nome = 'Alcemir', sal>1.234] (Developers))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25107363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25107363'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> JOIN [nome='sal']((SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students))))TIMES(SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students)))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30744772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30744772'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> JOIN [nome='sal']((PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))TIMES(JOIN [nome='Alcemir']((Developers) TIMES (Students))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32481053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32481053'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12014584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12014584'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 33
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2917593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2917593'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 33
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))))))TIMES(RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 34
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32782069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32782069'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 34
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](RENAME[Developers](Students)));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4461550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4461550'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24669796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24669796'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))DIVISION(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7224672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7224672'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELEC [nome = 'Alcemir', sal>1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5462872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5462872'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT nome = 'Alcemir', sal>1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25253977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25253977'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome  'Alcemir', sal>1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13582581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13582581'><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = Alcemir, sal>1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um HORA ou NUM ou mesmo um LITERAL na coluna 15
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:374)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11649632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11649632'><pre>br.exceptions.SintaticoException: Esperava um HORA ou NUM ou mesmo um LITERAL na coluna 15
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:374)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir' sal>1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 25
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5256233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5256233'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 25
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal 1.234] (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 30
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26250401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26250401'><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 30
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234 (Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 36
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16821027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16821027'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 36
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] Developers);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14923925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14923925'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] Developers ;</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7043360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7043360'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] ('Developers');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 38
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:446)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31278839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31278839'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 38
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:446)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] (Developers > 2345);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 49
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:469)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6175092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6175092'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 49
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:469)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> ROJECT [nome](Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5298332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5298332'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT nome](Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 8
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:163)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29167060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29167060'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 8
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:163)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome(Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14093690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14093690'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome]Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11924794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11924794'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome]Students;</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11240763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11240763'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome]('Students');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 15
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:269)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12067688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12067688'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 15
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:269)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome](Students <= 876);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 24
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:292)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18647665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18647665'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 24
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:292)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome rg](Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12926414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12926414'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [SELECT](Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 9
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:180)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22862399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22862399'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 9
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:180)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> PROJECT [nome = 'ASDF'](Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16554308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16554308'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 14
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JON [nome='Alcemir']((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28470003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28470003'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN nome='Alcemir']((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 5
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9142687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9142687'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 5
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome 'Alcemir']((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:528)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11468767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11468767'><pre>br.exceptions.SintaticoException: Esperava um OP_RELACIONAL na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:528)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome= Alcemir]((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 34
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:691)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18916478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18916478'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 34
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:691)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN ['nome'= 'Alcemir']((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 6
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:511)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1012673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1012673'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 6
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:511)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir'((Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7901508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7901508'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir'](Developers) TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25771774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25771774'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir']((Developers TIMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25609906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25609906'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir']((Developers) IMES (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22996593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22996593'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir']((Developers) TIMES Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23794631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23794631'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir'](Developers) TIMES (Students);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14651230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14651230'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> JOIN [nome='Alcemir']((Developers) DIVISION (Students));</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29140465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29140465'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAM[NaoFerrouNada](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3317565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3317565'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME NaoFerrouNada](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:786)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24418135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24418135'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:786)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada (Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24893089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24893089'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada] Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21491205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21491205'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada] Joaonielton ;</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22781544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22781544'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME['NaoFerrouNada'](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33353934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33353934'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada]('Joaonielton');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:867)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19230370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19230370'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 22
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:867)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada](JOIN);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 26
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8548382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8548382'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 26
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[SELECT](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26143190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26143190'><pre>br.exceptions.SintaticoException: Esperava um ID na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada > 9876](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26872956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26872956'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada =](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11120133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11120133'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> RENAME[NaoFerrouNada = 'ASDF'](Joaonielton);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32779081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32779081'><pre>br.exceptions.SintaticoException: Esperava um VIRGULA ou COLCHETE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> assim)TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21356612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21356612'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8831815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8831815'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim) IMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PCART ou mesmo um OP_DIV na coluna 8
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25062038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25062038'><pre>br.exceptions.SintaticoException: Esperava um OP_PCART ou mesmo um OP_DIV na coluna 8
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim)TIMES SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8889804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8889804'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim)TIMES SAssado;</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26611461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26611461'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim)TIMES('SAssado');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11807935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11807935'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim)TIMES(345678);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15054627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15054627'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim)TIMES(SAssado <> 344);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1044)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22710119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22710119'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 21
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1044)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (234)TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7306473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7306473'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (SELECT) TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24230857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24230857'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> ('assim')TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31436753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31436753'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim = )TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9424533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9424533'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (assim = 'sdfe')TIMES(SAssado);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21219507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21219507'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 7
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> Students)DIVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19757584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19757584'><pre>br.exceptions.SintaticoException: Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students DIVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 10
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33475172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33475172'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 10
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students) IVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um OP_PCART ou mesmo um OP_DIV na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10062600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10062600'><pre>br.exceptions.SintaticoException: Esperava um OP_PCART ou mesmo um OP_DIV na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7785463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7785463'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION StudentS;</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21548172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21548172'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION('StudentS');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7145547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7145547'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION(StudentS <> 456);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3912376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3912376'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> ('Students')DIVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22172750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22172750'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (JOIN)DIVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 5
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892095'><pre>br.exceptions.SintaticoException: Esperava um COLCHETE_E na coluna 5
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students >= 87)DIVISION(StudentS);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 10
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24408544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24408544'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 10
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION('StudentS');</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31476927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31476927'><pre>br.exceptions.SintaticoException: Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION(StudentS = );</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13549765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13549765'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure()'>testaCOMANDOfaliure<br/><b>Parameters:</b> (Students)DIVISION(StudentS > 1232);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30541453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30541453'><pre>br.exceptions.SintaticoException: Esperava um PARENTESE_D na coluna 28
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] (Developers);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234, rg = 1234678] (Developers);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1234] (PROJECT [nome](Developers));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1234] (RENAME [Programadores] (Developers));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> SELECT [nome = 'Alcemir', sal>1.234] ((Developers) TIMES (Students));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome](Students);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome,RG](Developers);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome](SELECT [nome='Santos', sal>2345]((Developers) TIMES (Students)) );</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome, sal](RENAME[Developers](St_ude.nts));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome, sal]((Developers)TIMES(Students));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> PROJECT [nome, sal]((Developers)DIVISION(Students));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> RENAME[NaoFerrouNada](Joao_nielton);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (assim)TIMES(SAssado);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (PROJECT [nome](Students))DIVISION(PROJECT [nome](Students));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (Students)DIVISION(StudentS);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> (SELECT [nome = 'Alcemir', sal>1.234] (Developers))DIVISION(SELECT [nome = 'Alcemir', sal>1.234] (Developers));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess()'>testaCOMANDOsuccess<br/><b>Parameters:</b> RENAME[NaoFerrouNada](Joaoni.elton);</td>
+<td>0</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

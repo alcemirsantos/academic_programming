@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.testes.TesteTradutor" failures="0" tests="6" time="0.188" errors="0">
+  <properties/>
+  <testcase name="testaTradutor" time="0.062" classname="br.testes.TesteTradutor"/>
+  <testcase name="testaTradutor" time="0.016" classname="br.testes.TesteTradutor"/>
+  <testcase name="testaTradutor" time="0.016" classname="br.testes.TesteTradutor"/>
+  <testcase name="testaTradutor" time="0.0" classname="br.testes.TesteTradutor"/>
+  <testcase name="testaTradutor" time="0.015" classname="br.testes.TesteTradutor"/>
+  <testcase name="testaTradutor" time="0.0" classname="br.testes.TesteTradutor"/>
+</testsuite>

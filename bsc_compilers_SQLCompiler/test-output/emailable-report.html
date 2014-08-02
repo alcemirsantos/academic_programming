@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">br.testes.TestesAnaliseSintatica</td><td class="numi">2</td><td class="numi">88</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0,6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">br.testes.TestesAnaliseSintatica &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">br.testes.TestesAnaliseSintatica<td><a href="#m1"><b>testaCOMANDOsuccess</b> (development)</a></td><td class="numi">12</td><td class="numi">187</td></tr>
+<tr><th colspan="4">br.testes.TestesAnaliseSintatica &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">br.testes.TestesAnaliseSintatica<td><a href="#m2"><b>testaCOMANDOfaliure</b> (develoment)</a></td><td class="numi">71</td><td class="numi">312</td></tr><tr class="passedodd"><td><a href="#m3"><b>testaCOMANDOsuccess</b> (development)</a></td><td class="numi">17</td><td class="numi">266</td></tr>
+</table>
+<h1>br.testes.TestesAnaliseSintatica</h1>
+<a id="m1"></a><h2>br.testes.TestesAnaliseSintatica:testaCOMANDOsuccess</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [no.me, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 37</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))))))TIMES(RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 34</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students)));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 48</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:439)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='sal']((PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))TIMES(JOIN [nome='Alcemir']((Developers) TIMES (Students))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">JOIN [nome='sal']((SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students))))TIMES(SELECT [nome = 'Alcemir', sal>1234] (JOIN [nome='Alcemir']((Developers) TIMES (Students)))));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='sal']((SELECT [nome = 'Alcemir', sal>1.234] (Developers))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 37</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))DIVISION(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 37</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">JOIN [no_me='Alcemir']((Developers) TIMES (Students));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 12</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAME[FerrouFoitudo](JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos))))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 33</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](RENAME[Developers](Students)));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 12</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='sal']((JOIN [nome='Alcemir']((Developers) TIMES (Students)))TIMES(PROJECT [nome, sal](JOIN[Developers='Seniors']((Students)TIMES(Alunos)))));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+<br/>22 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>br.testes.TestesAnaliseSintatica:testaCOMANDOfaliure</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">JOIN [nome 'Alcemir']((Developers) TIMES (Students));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_RELACIONAL na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:528)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir'](Developers) TIMES (Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [SELECT](Students);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 9</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:180)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome(Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 13</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim TIMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAME NaoFerrouNada](Joaonielton);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:786)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Students)DIVISION(StudentS);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir'((Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim = )TIMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(assim)TIMES(345678);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada =](Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 21</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students >= 87)DIVISION(StudentS);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 10</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] Developers ;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 37</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir']((Developers TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada (Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 21</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] (Developers > 2345);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 49</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:469)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome](Students <= 876);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 24</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:292)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION StudentS;</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 19</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">assim)TIMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 37</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:415)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION('StudentS');</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN nome='Alcemir']((Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 5</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME['NaoFerrouNada'](Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JON [nome='Alcemir']((Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada > 9876](Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 21</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELEC [nome = 'Alcemir', sal>1.234] (Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(Students) IVISION(StudentS);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PCART ou mesmo um OP_DIV na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(assim)TIMES SAssado;</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 13</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] ('Developers');</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 38</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:446)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir']((Developers) TIMES Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION(StudentS > 1232);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 28</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada] Joaonielton);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 22</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada = 'ASDF'](Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 21</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:819)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(assim)TIMES SAssado);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 13</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:991)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome]('Students');</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 15</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:269)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir']((Developers) DIVISION (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal 1.234] (Developers);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_RELACIONAL na coluna 30</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada](JOIN);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 26</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim)TIMES('SAssado');</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 13</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1022)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome = 'ASDF'](Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 14</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim) IMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PCART ou mesmo um OP_DIV na coluna 8</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:973)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION StudentS);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 19</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1067)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(234)TIMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(SELECT) TIMES(SAssado);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[SELECT](Joaonielton);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:802)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT nome = 'Alcemir', sal>1.234] (Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:317)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada]('Joaonielton');</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 22</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:867)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(assim)TIMES(SAssado <> 344);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 21</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1044)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT nome](Students);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 8</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:163)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT [nome  'Alcemir', sal>1.234] (Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_RELACIONAL na coluna 14</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:350)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir']((Developers) IMES (Students));</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome='Alcemir'](Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 11</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir' sal>1.234] (Developers);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 25</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN ['nome'= 'Alcemir']((Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID na coluna 6</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:511)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(Students DIVISION(StudentS);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 10</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION('StudentS');</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 19</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1098)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim = 'sdfe')TIMES(SAssado);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 7</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:952)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome rg](Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um VIRGULA ou COLCHETE_D na coluna 14</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:201)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">('Students')DIVISION(StudentS);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">JOIN [nome= Alcemir]((Developers) TIMES (Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 34</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:691)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome]Students;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 14</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAM[NaoFerrouNada](Joaonielton);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada] Joaonielton ;</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 22</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:836)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">('assim')TIMES(SAssado);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um ID ou OP_PROJ ou OP_SEL ou OP_JUN ou OP_REN ou mesmo um PARENTESE_E na coluna 1</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:930)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = Alcemir, sal>1.234] (Developers);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um HORA ou NUM ou mesmo um LITERAL na coluna 15</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:374)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION(StudentS <> 456);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 28</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome]Students);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_E na coluna 14</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:236)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">ROJECT [nome](Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um OP_PROJ ou um OP_SEL ou um OP_JUN ou um OP_REN ou mesmo um PARENTESE_E na coluna 0</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:139)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234 (Developers);</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_D ou mesmo uma VIRGULA na coluna 36</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:397)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>23 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(JOIN)DIVISION(StudentS);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>Esperava um COLCHETE_E na coluna 5</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:495)
+<br/>at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION(StudentS = );</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Esperava um PARENTESE_D na coluna 28</p>
+br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:1121)
+<br/>at br.testes.TestesAnaliseSintatica.testaCOMANDOfaliure(TestesAnaliseSintatica.java:157)
+<br/>22 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>br.testes.TestesAnaliseSintatica:testaCOMANDOsuccess</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(assim)TIMES(SAssado);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(Students)DIVISION(StudentS);</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234, rg = 1234678] (Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada](Joaoni.elton);</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1234] (RENAME [Programadores] (Developers));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1234] (PROJECT [nome](Developers));</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">(PROJECT [nome](Students))DIVISION(PROJECT [nome](Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] ((Developers) TIMES (Students));</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome](Students);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome, sal]((Developers)DIVISION(Students));</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome, sal](RENAME[Developers](St_ude.nts));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome](SELECT [nome='Santos', sal>2345]((Developers) TIMES (Students)) );</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SELECT [nome = 'Alcemir', sal>1.234] (Developers);</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">(SELECT [nome = 'Alcemir', sal>1.234] (Developers))DIVISION(SELECT [nome = 'Alcemir', sal>1.234] (Developers));</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">PROJECT [nome, sal]((Developers)TIMES(Students));</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">PROJECT [nome,RG](Developers);</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RENAME[NaoFerrouNada](Joao_nielton);</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

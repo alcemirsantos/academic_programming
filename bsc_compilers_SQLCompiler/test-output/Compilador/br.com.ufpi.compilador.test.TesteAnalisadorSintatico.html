@@ -1,0 +1,854 @@
+<html>
+<head>
+<title>TestNG:  br.com.ufpi.compilador.test.TesteAnalisadorSintatico</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>br.com.ufpi.compilador.test.TesteAnalisadorSintatico</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 15 15:58:48 BRST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (469 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure()'>testaCMDFailure<br/><b>Parameters:</b> pipo nome,nome2 (sigma conta>10 tabela)</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 5 deveria ser um PRODUTO_CARTESIANOou um JUNCAO_NATURAL
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12067688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12067688'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 5 deveria ser um PRODUTO_CARTESIANOou um JUNCAO_NATURAL
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure()'>testaCMDFailure<br/><b>Parameters:</b> pi ,nome2 (sigma conta>10 tabela)</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18647665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18647665'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure()'>testaCMDFailure<br/><b>Parameters:</b> pi sigma (sigma conta>10 tabela)</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22862399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22862399'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDFailure(TesteAnalisadorSintatico.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> pi tabela.,nome2,nome (sigma conta>"hvnh" tabela);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 10 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:432)
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:424)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:96)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16554308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16554308'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 10 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:432)
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:424)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:96)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> pi  sigma conta>"hvnh" tabela);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:432)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:96)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28470003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28470003'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 1 deveria ser um OPERADOR_VEZES ou IDENTIFICADOR
+	at br.com.ufpi.compilador.AnalisadorSintatico.lista(AnalisadorSintatico.java:432)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:96)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> pi nome1,nome2.nome3 sigma conta>"hvnh" RHO tabela6 (((tabela) vezes tabela2) vezes tabela3)</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 21 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9142687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9142687'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 21 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b>  nome,nome2 (sigma conta.conta>"hvnh" tabela);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 5 deveria ser um PRODUTO_CARTESIANOou um JUNCAO_NATURAL
+	at br.com.ufpi.compilador.AnalisadorSintatico.relacaoAprimorada(AnalisadorSintatico.java:240)
+	at br.com.ufpi.compilador.AnalisadorSintatico.relacao(AnalisadorSintatico.java:221)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:109)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15401342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15401342'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 5 deveria ser um PRODUTO_CARTESIANOou um JUNCAO_NATURAL
+	at br.com.ufpi.compilador.AnalisadorSintatico.relacaoAprimorada(AnalisadorSintatico.java:240)
+	at br.com.ufpi.compilador.AnalisadorSintatico.relacao(AnalisadorSintatico.java:221)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:109)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> sigma a>b (sigma conta.conta>aaa tabela);</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 33 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:104)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:105)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18916478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18916478'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 33 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:104)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:105)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> PI aa,a. lkakla </td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 10 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1012673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1012673'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 10 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError()'>testaCMDUserError<br/><b>Parameters:</b> PI a.a,a sigma a+</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 9 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7901508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7901508'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 9 deveria ser um PARENTESE_ESQUERDA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmd(AnalisadorSintatico.java:97)
+	at br.com.ufpi.compilador.AnalisadorSintatico.cmdUsuario(AnalisadorSintatico.java:48)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserError(TesteAnalisadorSintatico.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi nome,sal,dnome (sigma sal>1.123 and sal <15 (emp));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> sigma a>b (sigma a>7 (coisa));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi nome,nome2 (sigma conta.conta>"hvnh" (tabela));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi * (sigma conta>"hvnh" (tabela));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> sigma a>b (sigma a>7 (coisa vezes coisa));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> a vezes b vezes c;</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> sigma nome=(("luis" or deptno=20) or (sal>50)) (emp);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi tabela.nome,nome2,nome (sigma conta>"hvnh" (tabela));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> inte juncao sal>1.123 and sal <15 (emp vezes dep);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> inte juncao a>b (tabela);</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi nome,sal,dnome (sigma sal>1.123 and sal <15 ((emp vezes dep)));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi nome,sal,dnome (sigma sal>1.123 and sal <15 (((emp) vezes dep)));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDUserSucess()'>testaCMDUserSucess<br/><b>Parameters:</b> pi nome,sal,dnome (sigma sal>1.123 and sal <15 (((emp) vezes dep) vezes a));</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDsucess()'>testaCMDsucess<br/><b>Parameters:</b> pi nome,nome2 (sigma conta>"hvnh" (tabela))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDsucess()'>testaCMDsucess<br/><b>Parameters:</b> pi * (sigma conta>"hvnh" (tabela))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDsucess()'>testaCMDsucess<br/><b>Parameters:</b> pi * (sigma conta>"hvnh" (tabela))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaCMDsucess()'>testaCMDsucess<br/><b>Parameters:</b> pi * (sigma (conta+1)*3>"hvnh" (tabela))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> 1))+1 </td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> ((1))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> 1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> ((1))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> 1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> (1)-1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> (((1/(1+2*5))+nome))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> ((1)+1)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> ((1/5+6))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> ((1)/6)+"kjhdh"</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaExpressaosucess()'>testaExpressaosucess<br/><b>Parameters:</b> nome</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror()'>testaPredicadoerror<br/><b>Parameters:</b> (1</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 2 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9578500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9578500'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 2 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror()'>testaPredicadoerror<br/><b>Parameters:</b> (1 1) </td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 3 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25253977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25253977'><pre>br.exceptions.SintaticoException: Na linha 0 e coluna 3 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:35)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror()'>testaPredicadoerror<br/><b>Parameters:</b> ((1)</td>
+<td>0</td>
+<td><div><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 4 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13582581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13582581'><pre>br.exceptions.SintaticoException: Na linha 1 e coluna 4 deveria ser um PARENTESE_DIREITA
+	at br.com.ufpi.compilador.AnalisadorSintatico.reconhecer(AnalisadorSintatico.java:24)
+	at br.com.ufpi.compilador.AnalisadorSintatico.fator(AnalisadorSintatico.java:345)
+	at br.com.ufpi.compilador.AnalisadorSintatico.termo(AnalisadorSintatico.java:319)
+	at br.com.ufpi.compilador.AnalisadorSintatico.exprecao(AnalisadorSintatico.java:302)
+	at br.com.ufpi.compilador.AnalisadorSintatico.valor(AnalisadorSintatico.java:195)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicado(AnalisadorSintatico.java:177)
+	at br.com.ufpi.compilador.AnalisadorSintatico.predicados(AnalisadorSintatico.java:157)
+	at br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadoerror(TesteAnalisadorSintatico.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+</pre></div></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b>  (nome>(5+7 +kjhdkj))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> ((1))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> 1))+1 </td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> ((1))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> 1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> (1)-1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> (((1/(1+2*5))+nome))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> ((1)+1)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> ((1/5+6))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> ((1)/6)+"kjhdh"</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> 1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> 1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> not (nome>(5+7 +kjhdkj))</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> (nome>(5+7 +kjhdkj)) and (nome<4)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> not (2*(1/5)+2)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> not not not (num<9)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome>8</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome="juliate"</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> jkhskhsk</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> u</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome=8</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome nome</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> nome+nome nome</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> (nome+nome) nome</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='br.com.ufpi.compilador.test.TesteAnalisadorSintatico.testaPredicadossucess()'>testaPredicadossucess<br/><b>Parameters:</b> (((1/(1+2*5))+nome))</td>
+<td>0</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

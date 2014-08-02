@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Compilador]" junit="false" parallel="false" annotations="JDK">
+  <test name="br.testes.TestesAnaliseSintatica(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="br.testes.TestesAnaliseSintatica">
+        <methods>
+          <include name="testaCOMANDOsuccess"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.testes.TestesAnaliseSintatica" failures="12" tests="100" time="0.641" errors="0">
+  <properties/>
+  <testcase name="testaCOMANDOsuccess" time="0.032" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 48">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 48
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:439)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 37">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 12">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 11">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 11">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.015" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 11">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 11">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 11
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.015" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 33">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 33
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 34">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 34
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:860)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 12">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 12
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 37">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica">
+    <failure type="br.exceptions.SintaticoException" message="Esperava um ID na coluna 37">
+      <![CDATA[br.exceptions.SintaticoException: Esperava um ID na coluna 37
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:545)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:262)
+	at br.kernel.AnalisadorSintatico.relacao(AnalisadorSintatico.java:923)
+	at br.testes.TestesAnaliseSintatica.testaCOMANDOsuccess(TestesAnaliseSintatica.java:61)
+... Removed 21 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testaCOMANDOsuccess" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOsuccess" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.016" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.015" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+  <testcase name="testaCOMANDOfaliure" time="0.0" classname="br.testes.TestesAnaliseSintatica"/>
+</testsuite>
